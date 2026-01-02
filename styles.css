@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    height: 70px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.logo img {
+    width: 55px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.nav-links li {
+    cursor: pointer;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: #f5f5f6;
+    padding: 8px 12px;
+    border-radius: 4px;
+    width: 350px;
+}
+
+.search-bar span {
+    margin-right: 8px;
+    color: gray;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    font-size: 14px;
+}
+
+/* Navbar icons container */
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* spacing between icon blocks */
+}
+
+/* Each icon block */
+.icon-block {
+    display: flex;
+    flex-direction: column; /* stack image and text vertically */
+    align-items: center;    /* center horizontally */
+    justify-content: center;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Icon images */
+.icon-block img {
+    width: 24px;   /* adjust size */
+    height: 24px;
+    margin-bottom: 5px; /* space between icon and text */
+}
+
+/* Text under icons */
+.icon-block p {
+    font-size: 12px;
+    margin: 0;
+    color: #333; /* adjust color */
+}
+
+/* Style for NEW badge */
+.new-label {
+    color: white;
+    background-color: rgb(228, 30, 63);
+    font-size: 10px;
+    font-weight: bold;
+    padding: 2px 4px;
+    border-radius: 4px;   /* rounded badge look */
+    margin-left: 4px;     /* spacing from STUDIO */
+    vertical-align: middle;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+#toggle-btn {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  background: rgb(255, 54, 87);
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  z-index: 1001;
+}
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background: #333;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  transition: transform 0.3s ease;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.sidebar.closed {
+  transform: translateX(-100%);
+}
+
+.sidebar h2, .sidebar h3 {
+  margin-top: 0;
+}
+
+.filter-section {
+  margin-bottom: 20px;
+}
+
+.filter-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.filter-section li {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.main-content {
+  margin-left: 270px;
+  padding: 20px;
+  transition: margin-left 0.3s ease;
+}
+
+.main-content.shifted {
+  margin-left: 20px;
+}
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+.product-card h3 {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.product-card .price {
+  color: rgb(241, 41, 74);
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.product-card .description {
+  font-size: 14px;
+  color: #555;
+  margin: 10px 0;
+}
+
+.product-card button {
+  background:rgb(241, 41, 74);
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.product-card button:hover {
+  background: rgb(241, 41, 74);
+}
+.footer {
+  background: #f5f5f5;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #111;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 6px 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.footer-section ul li:hover {
+  text-decoration: underline;
+}
+
+.footer-info {
+  margin: 20px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.footer-popular {
+  margin: 20px 0;
+}
+
+.footer-popular h4 {
+  margin-bottom: 10px;
+}
+
+.footer-popular p {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.footer-legal {
+  margin-top: 30px;
+  font-size: 13px;
+  color: #777;
+  line-height: 1.6;
+}
